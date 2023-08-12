@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the environment variable
-input_file="$CFILE"
-
-# Define the output file name
-output_file="c"
-
-# Run the preprocessor on the input C file and save the result to the output file
-gcc -E "$input_file" -o "$output_file"
+gcc -E $CFILE -o c
