@@ -17,8 +17,8 @@ if (s[firstNum] == '-')
 sign *= -1;
 }
 }
-
-for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+int i;
+for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 {
 resp *= 10;
 resp += (s[i] - 48);
